@@ -28,12 +28,12 @@ ext {
 }
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 33
     buildToolsVersion "29.0.3"
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 29
+        targetSdkVersion 33
         versionCode 8
         versionName "1.0.0"
     }
@@ -60,7 +60,7 @@ task checkstyle(type: Checkstyle) {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.2.0' }
+    implementation 'androidx.appcompat:appcompat:1.5.1' }
 
 // Bintray installing and uploading scripts
 // Can be found here: https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle
